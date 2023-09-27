@@ -7,11 +7,34 @@ import { useEffect, useRef, useState } from "react";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
+  const [theme, setTheme] = useState("dark");
+  const [toggleMode, setToggleMode] = useState(false);
   const [activeLink, setActiveLink] = useState("");
   let menuRef = useRef();
   let header = useRef();
 
+  const toggle_dark_mode = () => {
+    if (theme === "dark") {
+      localStorage.setItem("mode", "light");
+      setTheme("light");
+    } else {
+      localStorage.setItem("mode", "dark");
+      setTheme("dark");
+    }
+
+    if (toggleMode === false) {
+      setToggleMode(true);
+    } else {
+      setToggleMode(false);
+    }
+  };
+
   useEffect(() => {
+    document.body.className = theme;
+
+    const current_mode = localStorage.getItem("mode");
+    setTheme(current_mode);
+
     const navbarHandler = (e) => {
       if (!menuRef.current.contains(e.target)) {
         setOpen(false);
@@ -23,7 +46,7 @@ const Nav = () => {
     return () => {
       document.removeEventListener("mousedown", navbarHandler);
     };
-  }, []);
+  }, [theme]);
 
   // document.addEventListener("scroll", function () {
   //   header.current.classList.toggle("sticky", window.scrollY > 0);
@@ -75,6 +98,19 @@ const Nav = () => {
               >
                 contact
               </Link>
+            </li>
+            <li className="dark_mode">
+              {toggleMode === false ? (
+                <BsFillCloudSunFill
+                  className="fa_icon"
+                  onClick={toggle_dark_mode}
+                />
+              ) : (
+                <BsFillCloudMoonFill
+                  className="fa_icon"
+                  onClick={toggle_dark_mode}
+                />
+              )}
             </li>
           </ul>
           <div className="hamburger_menu" onClick={() => setOpen(!open)}>
