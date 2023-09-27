@@ -25,7 +25,7 @@ const Nav = () => {
     };
   }, []);
 
-  window.addEventListener("scroll", function () {
+  document.addEventListener("scroll", function () {
     header.current.classList.toggle("sticky", window.scrollY > 0);
   });
   return (
