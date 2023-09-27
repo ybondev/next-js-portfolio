@@ -7,14 +7,14 @@ import { useEffect, useRef, useState } from "react";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const [toggleMode, setToggleMode] = useState(false);
   const [activeLink, setActiveLink] = useState("");
   let menuRef = useRef();
   let header = useRef();
 
   const toggle_dark_mode = () => {
-    if (theme === "dark") {
+    if (theme !== "light") {
       localStorage.setItem("mode", "light");
       setTheme("light");
     } else {
