@@ -1,5 +1,12 @@
 [
   {
+    "id": 0,
+    "project_name": "123-movies",
+    "project_link": "https://123-movie.vercel.app/",
+    "project_img": "/assets/123-movies.png",
+    "project_desc": "A demo project using TheMovieDB API built in NextJs and Bootstrap for responsive design."
+  },
+  {
     "id": 1,
     "project_name": "lakesidegym",
     "project_link": "https://ybondev.github.io/next-js-lakesidegym/",
