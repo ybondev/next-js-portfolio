@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "project_name": "lakesidegym",
+    "project_link": "https://ybondev.github.io/next-js-lakesidegym/",
+    "project_img": "/assets/lakesidegym.png",
+    "project_desc": "Nestled near the beautiful Taal Volcano Lake, Lakeside Gym & Fitness is built to make you strong."
+  },
+  {
+    "id": 2,
+    "project_name": "frymates",
+    "project_link": "https://ybondev.github.io/next-js-frymates/",
+    "project_img": "/assets/frymates.png",
+    "project_desc": "Un-degen your trading. Make data-driven decisions. Get exclusive access to data-analytics tool and internal resources for a better, safer web3 trading."
+  },
+  {
+    "id": 3,
+    "project_name": "un-degenx",
+    "project_link": "https://ybondev.github.io/next-js-undegenx/",
+    "project_img": "/assets/undegenx.png",
+    "project_desc": "A data analytics website where we can provide you with information about assets or cryptocurrency."
+  },
+  {
+    "id": 4,
+    "project_name": "password generator",
+    "project_link": "https://ybondev.github.io/next-js-password-generator/",
+    "project_img": "/assets/password_generator.png",
+    "project_desc": "What is a Password Generator? Just as its name sounds, password generators are online tools that create customized passwords for users."
+  },
+  {
+    "id": 5,
+    "project_name": "url shortener",
+    "project_link": "https://ybondev.github.io/next-js-url-shortener/",
+    "project_img": "/assets/url_shortener.png",
+    "project_desc": "An URL shortener is a website that reduces the length of your URL (Uniform Resource Locator)."
+  },
+  {
+    "id": 6,
+    "project_name": "todo list",
+    "project_link": "https://ybondev.github.io/next-js-todo-list/",
+    "project_img": "/assets/todo_list.png",
+    "project_desc": "Todo List App is a kind of app that generally used to maintain our day-to-day tasks or list everything that we have to do."
+  }
+]
