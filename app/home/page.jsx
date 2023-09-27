@@ -71,10 +71,16 @@ const Home = () => {
               </div>
             </div>
             <div className="btn_container">
-              <Link href={``} className="link">
+              <Link
+                href={
+                  "https://drive.google.com/file/d/1Ni1SX2mY2LpDTWDhTWqEBKWTTulNXxbA/view"
+                }
+                target="_blank"
+                className="link"
+              >
                 <button className="resume">my resume</button>
               </Link>
-              <Link href={``} className="link">
+              <Link href={`#contact`} className="link">
                 <button className="get_in_touch">get in touch</button>
               </Link>
             </div>

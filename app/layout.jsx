@@ -4,7 +4,7 @@ import Nav from "./components/Nav";
 
 export const metadata = {
   title: "My Personal Portfolio | Ybon.dev",
-  description: "",
+  description: "My Personal Portfolio | Ybon.dev",
 };
 
 const layout = ({ children }) => {
