@@ -25,9 +25,9 @@ const Nav = () => {
     };
   }, []);
 
-  document.addEventListener("scroll", function () {
-    header.current.classList.toggle("sticky", window.scrollY > 0);
-  });
+  // document.addEventListener("scroll", function () {
+  //   header.current.classList.toggle("sticky", window.scrollY > 0);
+  // });
   return (
     <div className="container-fluid navbar_fluid sticky-top" ref={header}>
       <div className="container">
