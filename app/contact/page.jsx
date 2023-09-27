@@ -23,19 +23,23 @@ const Contact = () => {
             <div className="details">
               <div className="icon_details">
                 <FaMapMarker className="fa_icon" />
-                <Link href="" className="link">
+                <Link
+                  href="https://maps.app.goo.gl/T9GSDH4PvBKXJ8PfA"
+                  target="_blank"
+                  className="link"
+                >
                   Poblacion, Balete, Batangas
                 </Link>
               </div>
               <div className="icon_details">
                 <FaPhoneAlt className="fa_icon" />
-                <Link href="" className="link">
+                <Link href={`tel:09309858393`} className="link">
                   0930 985 8393
                 </Link>
               </div>
               <div className="icon_details">
                 <FaEnvelope className="fa_icon" />
-                <Link href="" className="link">
+                <Link href={`mailto: ybon.dev@gmail.com`} className="link">
                   ybon.dev@gmail.com
                 </Link>
               </div>
