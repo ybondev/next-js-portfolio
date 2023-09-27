@@ -68,7 +68,7 @@ const About = () => {
                   <div className="container">
                     <Image
                       src={"./assets/html.png"}
-                      width={500}
+                      width={24}
                       height={0}
                       alt=""
                       className="img-fluid"
@@ -78,7 +78,7 @@ const About = () => {
                   <div className="container">
                     <Image
                       src={"./assets/css.png"}
-                      width={500}
+                      width={24}
                       height={0}
                       alt=""
                       className="img-fluid"
@@ -88,7 +88,7 @@ const About = () => {
                   <div className="container">
                     <Image
                       src={"./assets/js.png"}
-                      width={500}
+                      width={24}
                       height={0}
                       alt=""
                       className="img-fluid"
@@ -98,7 +98,7 @@ const About = () => {
                   <div className="container">
                     <Image
                       src={"./assets/react.png"}
-                      width={500}
+                      width={24}
                       height={0}
                       alt=""
                       className="img-fluid"
@@ -108,7 +108,7 @@ const About = () => {
                   <div className="container">
                     <Image
                       src={"./assets/next-js.webp"}
-                      width={500}
+                      width={24}
                       height={0}
                       alt=""
                       className="img-fluid"
@@ -118,7 +118,7 @@ const About = () => {
                   <div className="container">
                     <Image
                       src={"./assets/figma.png"}
-                      width={500}
+                      width={24}
                       height={0}
                       alt=""
                       className="img-fluid"
@@ -128,7 +128,7 @@ const About = () => {
                   <div className="container">
                     <Image
                       src={"./assets/vs-code.png"}
-                      width={500}
+                      width={24}
                       height={0}
                       alt=""
                       className="img-fluid"
@@ -141,7 +141,7 @@ const About = () => {
                   <div className="container">
                     <Image
                       src={"./assets/java.png"}
-                      width={500}
+                      width={24}
                       height={0}
                       alt=""
                       className="img-fluid"
@@ -151,7 +151,7 @@ const About = () => {
                   <div className="container">
                     <Image
                       src={"./assets/c++.png"}
-                      width={500}
+                      width={24}
                       height={0}
                       alt=""
                       className="img-fluid"
@@ -161,7 +161,7 @@ const About = () => {
                   <div className="container">
                     <Image
                       src={"./assets/python.png"}
-                      width={500}
+                      width={24}
                       height={0}
                       alt=""
                       className="img-fluid"
@@ -171,7 +171,7 @@ const About = () => {
                   <div className="container">
                     <Image
                       src={"./assets/vb.png"}
-                      width={500}
+                      width={24}
                       height={0}
                       alt=""
                       className="img-fluid"
@@ -181,7 +181,7 @@ const About = () => {
                   <div className="container">
                     <Image
                       src={"./assets/solidity.svg"}
-                      width={500}
+                      width={24}
                       height={0}
                       alt=""
                       className="img-fluid"

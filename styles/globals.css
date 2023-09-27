@@ -188,7 +188,7 @@ section {
 
 .home_section .btn_container .resume {
   background: var(--accent-color);
-  color: var(--text-color);
+  color: var(--primary-bg);
   width: 100%;
 }
 
@@ -415,7 +415,7 @@ section {
 
 .contact_section .right_col form .btn_send button {
   background: var(--accent-color);
-  color: #f5f5f5;
+  color: var(--primary-bg);
   padding: 10px;
   border: none;
   text-transform: uppercase;
