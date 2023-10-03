@@ -13,11 +13,6 @@ const Nav = () => {
   let menuRef = useRef();
   let header = useRef();
 
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-    localStorage.setItem("active", link);
-  };
-
   const toggle_dark_mode = () => {
     if (theme !== "light") {
       localStorage.setItem("mode", "light");
@@ -39,8 +34,6 @@ const Nav = () => {
 
     const current_mode = localStorage.getItem("mode");
     setTheme(current_mode);
-
-    setActiveLink(localStorage.getItem("active"));
 
     const navbarHandler = (e) => {
       if (!menuRef.current.contains(e.target)) {
@@ -71,11 +64,10 @@ const Nav = () => {
           <ul className={open ? "active" : "inactive"}>
             <li>
               <Link
-                href={`#home`}
+                href={`/`}
                 className={
                   activeLink === "home" ? "active link_item" : "link_item"
                 }
-                onClick={() => handleLinkClick("home")}
               >
                 home
               </Link>
@@ -86,7 +78,6 @@ const Nav = () => {
                 className={
                   activeLink === "about" ? "active link_item" : "link_item"
                 }
-                onClick={() => handleLinkClick("about")}
               >
                 about me
               </Link>
@@ -97,7 +88,6 @@ const Nav = () => {
                 className={
                   activeLink === "projects" ? "active link_item" : "link_item"
                 }
-                onClick={() => handleLinkClick("projects")}
               >
                 projects
               </Link>
@@ -108,7 +98,6 @@ const Nav = () => {
                 className={
                   activeLink === "contact" ? "active link_item" : "link_item"
                 }
-                onClick={() => handleLinkClick("contact")}
               >
                 contact
               </Link>

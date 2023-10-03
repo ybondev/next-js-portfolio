@@ -352,7 +352,7 @@ section {
 .tech_section .wrapper .img-fluid,
 .other_tech_section .wrapper .img-fluid {
   width: 100%;
-  max-width: 100px;
+  max-width: 50px;
   transition: all 0.3s;
 }
 
@@ -405,6 +405,18 @@ section {
   text-transform: uppercase;
   color: var(--accent-color);
   margin-top: 1rem;
+}
+
+.projects_section button {
+  color: var(--primary-bg);
+  background: var(--accent-color);
+  border: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  width: 100%;
+  max-width: 150px;
+  margin-top: 1rem;
+  padding: 10px;
 }
 
 /* CONTACT */
@@ -523,5 +535,10 @@ section {
 
   .about_section .col-md-6:first-child {
     display: block;
+  }
+
+  .tech_section .wrapper .img-fluid,
+  .other_tech_section .wrapper .img-fluid {
+    max-width: 100px;
   }
 }
