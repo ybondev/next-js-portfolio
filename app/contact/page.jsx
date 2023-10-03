@@ -1,9 +1,36 @@
-import React from "react";
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
+import { useEffect, useRef, useState } from "react";
 import { FaEnvelope, FaMapMarker, FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE,
+        form.current,
+        process.env.NEXT_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          setLoading(false);
+          console.log(result.text);
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <div className="row gy-3">
@@ -48,12 +75,13 @@ const Contact = () => {
         </div>
         <div className="col-md-6">
           <div className="right_col">
-            <form action="#">
+            <form action="#" ref={form} onSubmit={sendEmail}>
               <div>
                 <input
                   type="text"
                   className="form-control"
                   placeholder="Name"
+                  name="user_name"
                   required
                 />
               </div>
@@ -62,6 +90,7 @@ const Contact = () => {
                   type="email"
                   className="form-control"
                   placeholder="Email"
+                  name="user_email"
                   required
                 />
               </div>
@@ -71,11 +100,12 @@ const Contact = () => {
                   rows="10"
                   className="form-control"
                   placeholder="Message"
+                  name="message"
                   required
                 ></textarea>
               </div>
               <div className="btn_send mt-3">
-                <button>send message</button>
+                <button>{loading ? "sending..." : "send message"}</button>
               </div>
             </form>
           </div>
