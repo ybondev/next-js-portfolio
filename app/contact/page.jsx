@@ -105,7 +105,11 @@ const Contact = () => {
                 ></textarea>
               </div>
               <div className="btn_send mt-3">
-                <button>{loading ? "sending..." : "send message"}</button>
+                {loading ? (
+                  <button disabled>sending...</button>
+                ) : (
+                  <button>send message</button>
+                )}
               </div>
             </form>
           </div>
