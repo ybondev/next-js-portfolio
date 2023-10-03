@@ -9,9 +9,14 @@ const Nav = () => {
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = useState("light");
   const [toggleMode, setToggleMode] = useState(false);
-  const [activeLink, setActiveLink] = useState("home");
+  const [activeLink, setActiveLink] = useState("");
   let menuRef = useRef();
   let header = useRef();
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+    localStorage.setItem("active", link);
+  };
 
   const toggle_dark_mode = () => {
     if (theme !== "light") {
@@ -35,6 +40,8 @@ const Nav = () => {
     const current_mode = localStorage.getItem("mode");
     setTheme(current_mode);
 
+    setActiveLink(localStorage.getItem("active"));
+
     const navbarHandler = (e) => {
       if (!menuRef.current.contains(e.target)) {
         setOpen(false);
@@ -53,10 +60,6 @@ const Nav = () => {
       header.current.classList.toggle("sticky", window.scrollY > 0);
     });
   }, []);
-
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-  };
 
   return (
     <div className="container-fluid navbar_fluid sticky-top" ref={header}>
