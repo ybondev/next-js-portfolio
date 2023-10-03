@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@/styles/globals.css";
-import Nav from "./components/Nav";
+import Nav from "@components/Nav";
 
 export const metadata = {
   title: "My Personal Portfolio | Ybon.dev",

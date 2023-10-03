@@ -24,6 +24,11 @@
   --rgba: rgba(245, 245, 245, 0.5);
 }
 
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
 body.body {
   background: var(--primary-bg);
 }
@@ -128,7 +133,7 @@ section {
 }
 
 .navbar ul li .active {
-  color: rebeccapurple;
+  color: var(--accent-color);
   font-weight: 500;
 }
 
@@ -312,6 +317,48 @@ section {
   max-width: 24px;
   transition: all 0.3s ease-in-out;
   margin-bottom: 1rem;
+}
+
+/* TECH SECTION */
+.tech_section {
+  background: var(--primary-bg);
+  color: var(--text-color);
+}
+
+.other_tech_section {
+  background: var(--secondary-bg);
+  color: var(--text-color);
+}
+
+.tech_section .header,
+.other_tech_section .header {
+  text-transform: capitalize;
+  font-size: clamp(1rem, 0.6667rem + 1.4815vw, 2rem);
+  font-weight: bold;
+}
+
+.tech_section .header span,
+.other_tech_section .header span {
+  color: var(--accent-color);
+}
+
+.tech_section .col-lg-2,
+.other_tech_section .col-lg-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech_section .wrapper .img-fluid,
+.other_tech_section .wrapper .img-fluid {
+  width: 100%;
+  max-width: 100px;
+  transition: all 0.3s;
+}
+
+.tech_section .wrapper .img-fluid:hover,
+.other_tech_section .wrapper .img-fluid:hover {
+  transform: scale(1.1);
 }
 
 /* PROJECTS */

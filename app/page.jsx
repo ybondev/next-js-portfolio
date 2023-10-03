@@ -3,6 +3,8 @@ import Home from "./home/page";
 import About from "./about/page";
 import Projects from "./projects/page";
 import Contact from "./contact/page";
+import TechStack from "@components/TechStack";
+import OtherTech from "@components/OtherTech";
 
 const page = () => {
   return (
@@ -15,6 +17,16 @@ const page = () => {
       <section className="about_section container-fluid" id="about">
         <div className="container">
           <About />
+        </div>
+      </section>
+      <section className="tech_section container-fluid">
+        <div className="container">
+          <TechStack />
+        </div>
+      </section>
+      <section className="other_tech_section container-fluid">
+        <div className="container">
+          <OtherTech />
         </div>
       </section>
       <section className="projects_section container-fluid" id="projects">

@@ -9,7 +9,7 @@ const Nav = () => {
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = useState("light");
   const [toggleMode, setToggleMode] = useState(false);
-  const [activeLink, setActiveLink] = useState("");
+  const [activeLink, setActiveLink] = useState("home");
   let menuRef = useRef();
   let header = useRef();
 
@@ -54,6 +54,10 @@ const Nav = () => {
     });
   }, []);
 
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
+
   return (
     <div className="container-fluid navbar_fluid sticky-top" ref={header}>
       <div className="container">
@@ -64,10 +68,11 @@ const Nav = () => {
           <ul className={open ? "active" : "inactive"}>
             <li>
               <Link
-                href={`/`}
+                href={`#home`}
                 className={
                   activeLink === "home" ? "active link_item" : "link_item"
                 }
+                onClick={() => handleLinkClick("home")}
               >
                 home
               </Link>
@@ -78,6 +83,7 @@ const Nav = () => {
                 className={
                   activeLink === "about" ? "active link_item" : "link_item"
                 }
+                onClick={() => handleLinkClick("about")}
               >
                 about me
               </Link>
@@ -88,6 +94,7 @@ const Nav = () => {
                 className={
                   activeLink === "projects" ? "active link_item" : "link_item"
                 }
+                onClick={() => handleLinkClick("projects")}
               >
                 projects
               </Link>
@@ -98,6 +105,7 @@ const Nav = () => {
                 className={
                   activeLink === "contact" ? "active link_item" : "link_item"
                 }
+                onClick={() => handleLinkClick("contact")}
               >
                 contact
               </Link>

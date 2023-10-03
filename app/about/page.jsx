@@ -29,17 +29,25 @@ const About = () => {
               about <span>me</span>
             </div>
             <div className="text">
-              I’m Angel, but you can call me Ybon. I’m a college graduate with a
-              degree in BS Information Technology with a major in service
-              management. My previous job was as a junior web developer in the
-              agency for 1 year. During that year, it was challenging for me
-              since, aside from being a junior web developer, I was also
-              assigned to do some analytics and conversion tracking like Google
-              Analytics and Google Tag Manager. I also managed some websites for
-              the previous client, like Shopify or Wordpress. Other than that, I
-              was able to deploy web2 and web3 websites for the agency I worked
-              for. Overall, it was a great experience to be part of their
-              agency, and I learned a lot of things.
+              I’m Angel, I’m a college graduate with a degree in BS Information
+              Technology.
+              <br />
+              <br />
+              My previous job was as a junior web developer in the agency for 1
+              year. It was challenging for me since, aside from being a junior
+              web developer, I was also assigned to do some analytics and
+              conversion tracking like Google Analytics and Google Tag Manager.
+              I also managed some websites for the previous client, like Shopify
+              or Wordpress.
+              <br />
+              <br />
+              Being part of this agency was an incredible experience that
+              allowed me to stretch my skills and creativity. It's where I
+              learned the importance of versatility and adaptability in the
+              ever-evolving technology.
+              <br />
+              <br />
+              Let's connect, collaborate, and create something amazing together.
             </div>
             <div className="tab">
               <ul className="category">
@@ -47,151 +55,17 @@ const About = () => {
                   className={toggle === 1 ? "active" : ""}
                   onClick={() => updateToggle(1)}
                 >
-                  skills
+                  experience
                 </li>
                 <li
                   className={toggle === 2 ? "active" : ""}
                   onClick={() => updateToggle(2)}
                 >
-                  experience
-                </li>
-                <li
-                  className={toggle === 3 ? "active" : ""}
-                  onClick={() => updateToggle(3)}
-                >
                   education
                 </li>
               </ul>
               <div className={toggle === 1 ? "show_content" : "content"}>
-                <h1>web development</h1>
-                <div className="tech_container mb-3">
-                  <div className="container">
-                    <Image
-                      src={"./assets/html.png"}
-                      width={24}
-                      height={0}
-                      alt=""
-                      className="img-fluid"
-                    />
-                    <p>HTML</p>
-                  </div>
-                  <div className="container">
-                    <Image
-                      src={"./assets/css.png"}
-                      width={24}
-                      height={0}
-                      alt=""
-                      className="img-fluid"
-                    />
-                    <p>CSS</p>
-                  </div>
-                  <div className="container">
-                    <Image
-                      src={"./assets/js.png"}
-                      width={24}
-                      height={0}
-                      alt=""
-                      className="img-fluid"
-                    />
-                    <p>JavaScript</p>
-                  </div>
-                  <div className="container">
-                    <Image
-                      src={"./assets/react.png"}
-                      width={24}
-                      height={0}
-                      alt=""
-                      className="img-fluid"
-                    />
-                    <p>React JS</p>
-                  </div>
-                  <div className="container">
-                    <Image
-                      src={"./assets/next-js.webp"}
-                      width={24}
-                      height={0}
-                      alt=""
-                      className="img-fluid"
-                    />
-                    <p>Next.JS</p>
-                  </div>
-                  <div className="container">
-                    <Image
-                      src={"./assets/figma.png"}
-                      width={24}
-                      height={0}
-                      alt=""
-                      className="img-fluid"
-                    />
-                    <p>Figma</p>
-                  </div>
-                  <div className="container">
-                    <Image
-                      src={"./assets/vs-code.png"}
-                      width={24}
-                      height={0}
-                      alt=""
-                      className="img-fluid"
-                    />
-                    <p>VSCode</p>
-                  </div>
-                </div>
-                <h1>others tech stack</h1>
-                <div className="tech_container">
-                  <div className="container">
-                    <Image
-                      src={"./assets/java.png"}
-                      width={24}
-                      height={0}
-                      alt=""
-                      className="img-fluid"
-                    />
-                    <p>Java</p>
-                  </div>
-                  <div className="container">
-                    <Image
-                      src={"./assets/c++.png"}
-                      width={24}
-                      height={0}
-                      alt=""
-                      className="img-fluid"
-                    />
-                    <p>C++</p>
-                  </div>
-                  <div className="container">
-                    <Image
-                      src={"./assets/python.png"}
-                      width={24}
-                      height={0}
-                      alt=""
-                      className="img-fluid"
-                    />
-                    <p>Python</p>
-                  </div>
-                  <div className="container">
-                    <Image
-                      src={"./assets/vb.png"}
-                      width={24}
-                      height={0}
-                      alt=""
-                      className="img-fluid"
-                    />
-                    <p>Visual Basic</p>
-                  </div>
-                  <div className="container">
-                    <Image
-                      src={"./assets/solidity.svg"}
-                      width={24}
-                      height={0}
-                      alt=""
-                      className="img-fluid"
-                    />
-                    <p>Solidity</p>
-                  </div>
-                </div>
-              </div>
-              <div className={toggle === 2 ? "show_content" : "content"}>
-                <h1>junior web developer at data atelier</h1>
+                <h1>junior web developer at data atelier advertising agency</h1>
                 <ul className="junior_web">
                   <li>Created local website gym in Lakeside Gym & Fitness</li>
                   <li>Deployed smart contract and two web3 websites</li>
@@ -217,7 +91,7 @@ const About = () => {
                   </li>
                 </ul>
               </div>
-              <div className={toggle === 3 ? "show_content" : "content"}>
+              <div className={toggle === 2 ? "show_content" : "content"}>
                 <h1>education</h1>
                 <ul className="education">
                   <li>

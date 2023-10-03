@@ -42,7 +42,7 @@ const Home = () => {
                   <FaFacebook className="fa_icon" />
                 </Link>
               </div>
-              <div className="github">
+              {/* <div className="github">
                 <Link
                   href={"https://github.com/ybondev"}
                   target="_blank"
@@ -50,7 +50,7 @@ const Home = () => {
                 >
                   <FaGithub className="fa_icon" />
                 </Link>
-              </div>
+              </div> */}
               <div className="instagram">
                 <Link
                   href={"https://instagram.com/systematic_3/"}
