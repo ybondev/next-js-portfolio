@@ -23,7 +23,7 @@
   {
     "id": 3,
     "project_name": "un-degenx",
-    "project_link": "https://ybondev.github.io/next-js-undegenx/",
+    "project_link": "https://undegenx.vercel.app/",
     "project_img": "/assets/undegenx.png",
     "project_desc": "A data analytics website where we can provide you with information about assets or cryptocurrency."
   },
