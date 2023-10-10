@@ -30,7 +30,7 @@
   {
     "id": 4,
     "project_name": "password generator",
-    "project_link": "https://ybondev.github.io/next-js-password-generator/",
+    "project_link": "https://getpass.vercel.app/",
     "project_img": "/assets/password_generator.png",
     "project_desc": "What is a Password Generator? Just as its name sounds, password generators are online tools that create customized passwords for users."
   },
