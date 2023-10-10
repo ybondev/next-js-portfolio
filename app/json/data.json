@@ -43,9 +43,9 @@
   },
   {
     "id": 6,
-    "project_name": "todo list",
-    "project_link": "https://ybondev.github.io/next-js-todo-list/",
+    "project_name": "tracker list",
+    "project_link": "https://trackerlist.vercel.app/",
     "project_img": "/assets/todo_list.png",
-    "project_desc": "Todo List App is a kind of app that generally used to maintain our day-to-day tasks or list everything that we have to do."
+    "project_desc": "Tracker list is a kind of app that generally used to maintain our day-to-day tasks or list everything that we have to do."
   }
 ]
