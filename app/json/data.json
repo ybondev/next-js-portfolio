@@ -37,7 +37,7 @@
   {
     "id": 5,
     "project_name": "url shortener",
-    "project_link": "https://ybondev.github.io/next-js-url-shortener/",
+    "project_link": "https://geturlshortener.vercel.app/",
     "project_img": "/assets/url_shortener.png",
     "project_desc": "An URL shortener is a website that reduces the length of your URL (Uniform Resource Locator)."
   },
