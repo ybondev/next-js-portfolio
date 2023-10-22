@@ -45,9 +45,6 @@ const About = () => {
               allowed me to stretch my skills and creativity. It's where I
               learned the importance of versatility and adaptability in the
               ever-evolving technology.
-              <br />
-              <br />
-              Let's connect, collaborate, and create something amazing together.
             </div>
             <div className="tab">
               <ul className="category">
