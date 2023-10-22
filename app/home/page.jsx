@@ -3,7 +3,6 @@ import Image from "next/image";
 import {
   FaDiscord,
   FaFacebook,
-  FaGithub,
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
