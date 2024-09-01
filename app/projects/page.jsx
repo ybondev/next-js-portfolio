@@ -11,7 +11,7 @@ const Projects = () => {
 
   const sliceData = () => {
     setLoading(false);
-    const slicedData = Data.slice(0, count);
+    const slicedData = Data.projects.slice(0, count);
     setData(slicedData);
   };
 
@@ -31,7 +31,7 @@ const Projects = () => {
     <>
       <div className="row gy-3">
         <div className="header">
-          my <span>works</span>
+          my <span>projects</span>
         </div>
         {data.map((x) => {
           return (

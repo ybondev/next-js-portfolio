@@ -4,7 +4,7 @@ import About from "./about/page";
 import Projects from "./projects/page";
 import Contact from "./contact/page";
 import TechStack from "@components/TechStack";
-import OtherTech from "@components/OtherTech";
+import Experiences from "./experiences/page";
 
 const page = () => {
   return (
@@ -24,9 +24,9 @@ const page = () => {
           <TechStack />
         </div>
       </section>
-      <section className="other_tech_section container-fluid">
+      <section className="experience_section container-fluid">
         <div className="container">
-          <OtherTech />
+          <Experiences />
         </div>
       </section>
       <section className="projects_section container-fluid" id="projects">
