@@ -1,11 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  FaDiscord,
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaDiscord, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
   return (
