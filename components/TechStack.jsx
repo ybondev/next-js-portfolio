@@ -3,26 +3,32 @@ import Image from "next/image";
 const tech_links = [
   {
     id: 1,
+    name: "html",
     img: "./assets/html.png",
   },
   {
     id: 2,
+    name: "css",
     img: "./assets/css.png",
   },
   {
     id: 3,
+    name: "javascript",
     img: "./assets/js.png",
   },
   {
     id: 4,
+    name: "bootstrap",
     img: "./assets/bootstrap.png",
   },
   {
     id: 5,
+    name: "next.js",
     img: "./assets/next-js.webp",
   },
   {
     id: 6,
+    name: "figma",
     img: "./assets/figma.png",
   },
 ];
@@ -41,11 +47,14 @@ const TechStack = () => {
                 <div className="wrapper">
                   <Image
                     src={x.img}
-                    width={100}
+                    width={0}
                     height={0}
                     alt=""
-                    className="img-fluid"
+                    className="img-fluid tech_img"
                   />
+                  <div className="tech_name">
+                    <span>{x.name}</span>
+                  </div>
                 </div>
               </div>
             );

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaDiscord, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFilePdf } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -17,44 +17,6 @@ const Home = () => {
               innovation. I am constantly striving to expand my knowledge and
               enhance my skills to become a valuable asset in the IT industry.
             </div>
-            <div className="social_media">
-              <div className="discord">
-                <Link
-                  href={"https://discordapp.com/users/391959554910584847"}
-                  target="_blank"
-                  className="link"
-                >
-                  <FaDiscord className="fa_icon" />
-                </Link>
-              </div>
-              <div className="facebook">
-                <Link
-                  href={"https://facebook.com/Systematic.31/"}
-                  target="_blank"
-                  className="link"
-                >
-                  <FaFacebook className="fa_icon" />
-                </Link>
-              </div>
-              <div className="instagram">
-                <Link
-                  href={"https://instagram.com/systematic_3/"}
-                  target="_blank"
-                  className="link"
-                >
-                  <FaInstagram className="fa_icon" />
-                </Link>
-              </div>
-              <div className="linkedin">
-                <Link
-                  href={"https://www.linkedin.com/in/ybon-ramirez-57409122a/"}
-                  target="_blank"
-                  className="link"
-                >
-                  <FaLinkedin className="fa_icon" />
-                </Link>
-              </div>
-            </div>
             <div className="btn_container">
               <Link
                 href={
@@ -63,7 +25,10 @@ const Home = () => {
                 target="_blank"
                 className="link"
               >
-                <button className="resume">my resume</button>
+                <button className="resume">
+                  <FaFilePdf className="fa_icon" />
+                  my resume
+                </button>
               </Link>
               <Link href={`#contact`} className="link">
                 <button className="get_in_touch">get in touch</button>

@@ -19,7 +19,7 @@ const Experiences = () => {
 
   return (
     <div className="row gy-3">
-      <div className="header">experiences</div>
+      <div className="header">experience</div>
       {data.map((x) => {
         return (
           <>

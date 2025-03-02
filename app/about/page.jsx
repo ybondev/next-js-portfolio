@@ -1,6 +1,13 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import {
+  FaDiscord,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
+import Link from "next/link";
 
 const About = () => {
   const [toggle, setToggle] = useState(1);
@@ -29,24 +36,57 @@ const About = () => {
               about <span>me</span>
             </div>
             <div className="text">
-              I’m Angel, I’m a college graduate with a degree in BS Information
+              Hi, I’m Angel, a college graduate with a degree in BS Information
               Technology.
               <br />
               <br />
-              My previous job was as a junior web developer in the agency for 1
-              year. It was challenging for me since, aside from being a junior
-              web developer, I was also assigned to do some analytics and
-              conversion tracking like Google Analytics and Google Tag Manager.
-              I also managed some websites for the previous client, like Shopify
-              or Wordpress.
+              I specialize in front-end development and have experience in
+              hardware troubleshooting. I also have basic knowledge of APIs,
+              back-end development, Google Analytics, and Google Tag Manager.
               <br />
               <br />
-              Being part of this agency was an incredible experience that
-              allowed me to stretch my skills and creativity. It's where I
-              learned the importance of versatility and adaptability in the
-              ever-evolving technology.
+              I'm always eager to learn and improve my skills to create better
+              web experiences.
             </div>
-            <div className="tab">
+            <div className="social_media">
+              <div className="discord">
+                <Link
+                  href={"https://discordapp.com/users/391959554910584847"}
+                  target="_blank"
+                  className="link"
+                >
+                  <FaDiscord className="fa_icon" />
+                </Link>
+              </div>
+              <div className="facebook">
+                <Link
+                  href={"https://facebook.com/Systematic.31/"}
+                  target="_blank"
+                  className="link"
+                >
+                  <FaFacebook className="fa_icon" />
+                </Link>
+              </div>
+              <div className="instagram">
+                <Link
+                  href={"https://instagram.com/systematic_3/"}
+                  target="_blank"
+                  className="link"
+                >
+                  <FaInstagram className="fa_icon" />
+                </Link>
+              </div>
+              <div className="linkedin">
+                <Link
+                  href={"https://www.linkedin.com/in/ybon-ramirez-57409122a/"}
+                  target="_blank"
+                  className="link"
+                >
+                  <FaLinkedin className="fa_icon" />
+                </Link>
+              </div>
+            </div>
+            {/* <div className="tab">
               <ul className="category">
                 <li
                   className={toggle === 1 ? "active" : ""}
@@ -100,7 +140,7 @@ const About = () => {
                   <li>Balete Central School (2006 – 2012)</li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

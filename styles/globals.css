@@ -167,13 +167,6 @@ section {
   font-size: clamp(2rem, 1.3333rem + 2.963vw, 3.7rem);
   font-weight: bold;
 }
-
-.home_section .social_media {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
 .home_section .btn_container {
   display: flex;
   flex-wrap: wrap;
@@ -196,6 +189,15 @@ section {
   background: var(--accent-color);
   color: var(--primary-bg);
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_section .btn_container .resume .fa_icon {
+  margin-right: 3px;
+  font-size: 18px;
+  color: var(--primary-bg);
 }
 
 .home_section .btn_container .get_in_touch {
@@ -210,17 +212,25 @@ section {
   background: var(--accent-color);
 }
 
-.home_section .social_media .fa_icon {
-  transition: all 0.3s;
-}
-
-.home_section .social_media .fa_icon:hover {
-  color: var(--accent-color);
-}
-
 .home_section .col-md-6:last-child {
   display: flex;
   justify-content: center;
+}
+
+/* SOCIAL MEDIA */
+.social_media {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+
+.social_media .fa_icon {
+  transition: all 0.3s;
+}
+
+.social_media .fa_icon:hover {
+  color: var(--accent-color);
 }
 
 /* ABOUT */
@@ -285,41 +295,6 @@ section {
   text-transform: uppercase;
 }
 
-.about_section .tech_container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-}
-
-.about_section .tech_container .container {
-  background: var(--primary-bg);
-  padding: 10px;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  margin: auto 0;
-  position: relative;
-}
-
-.about_section .tech_container .container p {
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-.about_section .tech_container .container:hover .img-fluid {
-  transform: scale(1.5);
-}
-
-.about_section .tech_container .container .img-fluid {
-  width: 100%;
-  max-width: 24px;
-  transition: all 0.3s ease-in-out;
-  margin-bottom: 1rem;
-}
-
 /* TECH SECTION */
 .tech_section {
   background: var(--primary-bg);
@@ -342,14 +317,34 @@ section {
   justify-content: center;
 }
 
-.tech_section .wrapper .img-fluid {
+.tech_section .wrapper {
+  border: 1px solid gray;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border-radius: 5px;
   width: 100%;
-  max-width: 50px;
-  transition: all 0.3s;
+  max-width: 200px;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
 
-.tech_section .wrapper .img-fluid:hover {
-  transform: scale(1.1);
+.tech_section .wrapper:hover {
+  background: var(--secondary-bg);
+  box-shadow: 0 0 10px gray;
+  transform: translateY(-5px);
+}
+
+.tech_section .wrapper .tech_name {
+  text-transform: uppercase;
+}
+
+.tech_section .wrapper .img-fluid.tech_img {
+  width: 100%;
+  max-width: 50px;
 }
 
 /* EXPERIENCES */
@@ -398,17 +393,26 @@ section {
   gap: 1rem;
   transition: all 0.3s ease-in-out;
   padding: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 350px;
+  /* overflow: hidden; */
 }
 
 .projects_section .card_container:hover {
   background: var(--secondary-bg);
-  box-shadow: 0 0 10px var(--accent-color);
+  box-shadow: 0 0 10px gray;
   transform: translateY(-5px);
 }
 
 .projects_section .card_container .img-fluid {
   width: 100%;
   max-width: 500px;
+}
+
+.projects_section .card_container .card_text {
+  text-overflow: ellipsis; /* Display an ellipsis (...) to represent clipped text */
+  overflow: hidden; /* Clip text that exceeds the specified width */
 }
 
 .projects_section .card_container .card_title {
