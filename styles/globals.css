@@ -490,7 +490,7 @@ section {
 .contact_section .right_col form .btn_send button {
   background: var(--accent-color);
   color: var(--primary-bg);
-  padding: 5px;
+  padding: 8px;
   border: none;
   text-transform: uppercase;
   font-weight: 700;
