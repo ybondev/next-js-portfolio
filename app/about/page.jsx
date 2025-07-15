@@ -1,12 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import {
-  FaDiscord,
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaDiscord, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
 const About = () => {
@@ -36,17 +31,18 @@ const About = () => {
               about <span>me</span>
             </div>
             <div className="text">
-              Hi, I’m Angel, a college graduate with a degree in BS Information
-              Technology.
+              BS in Information Technology graduate with knowledge of
+              programming languages, website development, and can do
+              hardware/software troubleshooting.
               <br />
               <br />
-              I specialize in front-end development and have experience in
-              hardware troubleshooting. I also have basic knowledge of APIs,
-              back-end development, Google Analytics, and Google Tag Manager.
+              Skilled in Microsoft Office applications like Excel and Word.
               <br />
               <br />
-              I'm always eager to learn and improve my skills to create better
-              web experiences.
+              Experienced in managing people, sales, and inventory.
+              <br />
+              <br />I aim to use my knowledge and experience to contribute to
+              the company’s success.
             </div>
             <div className="social_media">
               <div className="discord">

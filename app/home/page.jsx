@@ -20,7 +20,7 @@ const Home = () => {
             <div className="btn_container">
               <Link
                 href={
-                  "https://drive.google.com/file/d/1Ni1SX2mY2LpDTWDhTWqEBKWTTulNXxbA/view"
+                  "https://drive.google.com/file/d/10n8m1Ps-Xg2lWzPgMPcsCYF_MsGolYmH/view?usp=sharing"
                 }
                 target="_blank"
                 className="link"
