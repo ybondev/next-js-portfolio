@@ -1,6 +1,8 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { FaFilePdf } from "react-icons/fa";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const Home = () => {
   return (
@@ -31,7 +33,14 @@ const Home = () => {
                 </button>
               </Link>
               <Link href={`#contact`} className="link">
-                <button className="get_in_touch">get in touch</button>
+                <button
+                  className="get_in_touch"
+                  onClick={() =>
+                    sendGTMEvent({ event: "buttonClicked", value: "xyz" })
+                  }
+                >
+                  get in touch
+                </button>
               </Link>
             </div>
           </div>
