@@ -54,7 +54,7 @@ const Contact = () => {
             src="/assets/contact.svg"
             width={1000}
             height={1000}
-            className="img-fluid"
+            className="img img-fluid"
             priority
             alt="Contact Illustration"
           />
