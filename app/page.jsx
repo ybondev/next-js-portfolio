@@ -5,6 +5,7 @@ import Projects from "./projects/page";
 import Contact from "./contact/page";
 import TechStack from "@components/TechStack";
 import Experiences from "./experiences/page";
+import Servicess from "./servicess/page";
 
 const page = () => {
   return (
@@ -22,6 +23,11 @@ const page = () => {
       <section className="tech_section container-fluid">
         <div className="container">
           <TechStack />
+        </div>
+      </section>
+      <section className="services_section container-fluid" id="services">
+        <div className="container">
+          <Servicess />
         </div>
       </section>
       <section className="experience_section container-fluid">

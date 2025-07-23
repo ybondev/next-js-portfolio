@@ -350,9 +350,39 @@ section {
   max-width: 50px;
 }
 
+/* SERVICES */
+.services_section {
+  background: var(--secondary-bg);
+  color: var(--text-color);
+}
+
+.services_section .header {
+  text-transform: capitalize;
+  font-size: clamp(1rem, 0.6667rem + 1.4815vw, 2rem);
+  font-weight: bold;
+  text-align: center;
+}
+
+.services_section .service-container {
+  background: var(--primary-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services_section .service-container .service_name {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 /* EXPERIENCES */
 .experience_section {
-  background: var(--secondary-bg);
+  background: var(--primary-bg);
   color: var(--text-color);
 }
 
@@ -376,7 +406,7 @@ section {
 
 /* PROJECTS */
 .projects_section {
-  background: var(--primary-bg);
+  background: var(--secondary-bg);
   color: var(--text-color);
 }
 
@@ -444,7 +474,7 @@ section {
 
 /* CONTACT */
 .contact_section {
-  background: var(--secondary-bg);
+  background: var(--primary-bg);
   color: var(--text-color);
 }
 

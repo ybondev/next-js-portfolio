@@ -11,7 +11,7 @@ const Home = () => {
         <div className="col-md-6">
           <div className="left_col">
             <div className="mini_header">
-              front-end <span>developer</span>
+              aspiring <span>freelancer</span>
             </div>
             <div className="name">ramirez angel bird</div>
             <div className="text">

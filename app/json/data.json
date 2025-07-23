@@ -76,5 +76,42 @@
       "title": "Junior Web Developer - Data Atelier Advertising Agency",
       "description": "I'm a web developer with experience in building websites, deploying smart contracts, creating Web3 applications, and enhancing analytics, primarily using React JS, Shopify, WordPress, and Google Tag Manager."
     }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "service_name": "💻 Web Development",
+      "s1": "WordPress Website Setup.",
+      "s2": "Landing Page Creation.",
+      "s3": "Website Maintenance & Updates.",
+      "s4": "API Integration.",
+      "s5": "Domain & Hosting Setup."
+    },
+        {
+      "id": 2,
+      "service_name": "🛠️ IT & Technical Support",
+      "s1": "Hardware/Software Troubleshooting.",
+      "s2": "System Setup & Maintenance.",
+      "s3": "Remote Technical Support.",
+      "s4": "Basic Network Setup.",
+      "s5": "Software Installation."
+    },
+    {
+      "id": 3,
+      "service_name": "📊 Digital Tools & Analytics",
+      "s1": "Google Tag Manager Setup.",
+      "s2": "Google Analytics Integration.",
+      "s3": "Event & Conversion Tracking.",
+      "s4": "Data Layer Implementation.",
+      "s5": "Website Performance Monitoring."
+    },
+    {
+      "id": 4,
+      "service_name": "🧑‍💼 Virtual Assistance",
+      "s1": "Data Entry & File Management.",
+      "s2": "Email & Calendar Management.",
+      "s3": "Online Research.",
+      "s4": "Report Creation (MS Word, Excel, PowerPoint)."
+    }
   ]
 }
