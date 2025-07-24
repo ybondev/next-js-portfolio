@@ -58,6 +58,25 @@ section {
   object-position: center;
 }
 
+.btn-custom {
+  transition: all 0.3s;
+}
+
+.btn-custom:hover {
+  background: tomato !important;
+  color: #f5f5f5 !important;
+}
+
+.resume,
+.get_in_touch {
+  transition: all 0.3s;
+}
+
+.resume:hover,
+.get_in_touch:hover {
+  transform: translateY(-5px);
+}
+
 /* MAVBAR */
 .navbar_fluid {
   padding: 2rem 0;
@@ -343,11 +362,12 @@ section {
 
 .tech_section .wrapper .tech_name {
   text-transform: uppercase;
+  font-size: clamp(0.8125rem, 0.6821rem + 0.6522vw, 1rem);
 }
 
 .tech_section .wrapper .img-fluid.tech_img {
   width: 100%;
-  max-width: 50px;
+  max-width: 20px;
 }
 
 /* SERVICES */
@@ -389,6 +409,7 @@ section {
 
 .services_section .service-container:hover {
   background: var(--primary-bg);
+  transform: translateY(-5px);
 }
 
 .services_section .service-container .service_name {
@@ -449,7 +470,7 @@ section {
 }
 
 .projects_section .card_container:hover {
-  background: var(--secondary-bg);
+  background: var(--primary-bg);
   box-shadow: 0 0 10px gray;
   transform: translateY(-5px);
 }
@@ -611,6 +632,15 @@ section {
   .tech_section .wrapper .img-fluid,
   .other_tech_section .wrapper .img-fluid {
     max-width: 100px;
+  }
+
+  .tech_section .wrapper .tech_name {
+  text-transform: uppercase;
+}
+
+  .tech_section .wrapper .img-fluid.tech_img {
+    width: 100%;
+    max-width: 50px;
   }
 
   .contact_section .img-fluid {

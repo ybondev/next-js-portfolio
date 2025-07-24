@@ -60,7 +60,7 @@ const Projects = () => {
       {data?.length > 4 ? (
         <button disabled>nothing to load</button>
       ) : (
-        <button onClick={loadMore}>
+        <button onClick={loadMore} className="btn-custom">
           {loading ? "loading..." : "load more"}
         </button>
       )}

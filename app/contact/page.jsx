@@ -110,7 +110,7 @@ const Contact = () => {
               required
             ></textarea>
             <div className="btn_send d-flex justify-content-end mt-3">
-              <button type="submit" disabled={loading}>
+              <button type="submit" disabled={loading} className="btn-custom">
                 {loading ? "Sending..." : "Send Message"}
               </button>
             </div>
